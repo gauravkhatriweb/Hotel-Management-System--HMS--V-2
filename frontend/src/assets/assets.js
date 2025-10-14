@@ -152,57 +152,129 @@ export const hotelDummyData = {
     "__v": 0
 }
 
-// Rooms Dummy Data
 export const roomsDummyData = [
-    {
-        "_id": "67f7647c197ac559e4089b96",
-        "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 399,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg1, roomImg2, roomImg3, roomImg4],
-        "isAvailable": true,
-        "createdAt": "2025-04-10T06:26:04.013Z",
-        "updatedAt": "2025-04-10T06:26:04.013Z",
-        "__v": 0
-    },
-    {
-        "_id": "67f76452197ac559e4089b8e",
-        "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 299,
-        "amenities": ["Room Service", "Mountain View", "Pool Access"],
-        "images": [roomImg2, roomImg3, roomImg4, roomImg1],
-        "isAvailable": true,
-        "createdAt": "2025-04-10T06:25:22.593Z",
-        "updatedAt": "2025-04-10T06:25:22.593Z",
-        "__v": 0
-    },
-    {
-        "_id": "67f76406197ac559e4089b82",
-        "hotel": hotelDummyData,
-        "roomType": "Double Bed",
-        "pricePerNight": 249,
-        "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
-        "images": [roomImg3, roomImg4, roomImg1, roomImg2],
-        "isAvailable": true,
-        "createdAt": "2025-04-10T06:24:06.285Z",
-        "updatedAt": "2025-04-10T06:24:06.285Z",
-        "__v": 0
-    },
-    {
-        "_id": "67f763d8197ac559e4089b7a",
-        "hotel": hotelDummyData,
-        "roomType": "Single Bed",
-        "pricePerNight": 199,
-        "amenities": ["Free WiFi", "Room Service", "Pool Access"],
-        "images": [roomImg4, roomImg1, roomImg2, roomImg3],
-        "isAvailable": true,
-        "createdAt": "2025-04-10T06:23:20.252Z",
-        "updatedAt": "2025-04-10T06:23:20.252Z",
-        "__v": 0
-    }
+  {
+    "_id": "67f7647c197ac559e4089b96",
+    "hotel": hotelDummyData,
+    "roomType": "Double Bed",
+    "pricePerNight": 399,
+    "amenities": ["Room Service", "Mountain View", "Pool Access"],
+    "images": [roomImg1, roomImg2, roomImg3, roomImg4],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:26:04.013Z",
+    "updatedAt": "2025-04-10T06:26:04.013Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f76452197ac559e4089b8e",
+    "hotel": hotelDummyData,
+    "roomType": "Double Bed",
+    "pricePerNight": 299,
+    "amenities": ["Room Service", "Mountain View", "Pool Access"],
+    "images": [roomImg2, roomImg3, roomImg4, roomImg1],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:25:22.593Z",
+    "updatedAt": "2025-04-10T06:25:22.593Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f76406197ac559e4089b82",
+    "hotel": hotelDummyData,
+    "roomType": "Double Bed",
+    "pricePerNight": 249,
+    "amenities": ["Free WiFi", "Free Breakfast", "Room Service"],
+    "images": [roomImg3, roomImg4, roomImg1, roomImg2],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:24:06.285Z",
+    "updatedAt": "2025-04-10T06:24:06.285Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f763d8197ac559e4089b7a",
+    "hotel": hotelDummyData,
+    "roomType": "Single Bed",
+    "pricePerNight": 199,
+    "amenities": ["Free WiFi", "Room Service", "Pool Access"],
+    "images": [roomImg4, roomImg1, roomImg2, roomImg3],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:23:20.252Z",
+    "updatedAt": "2025-04-10T06:23:20.252Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f7650a197ac559e4089ba1",
+    "hotel": hotelDummyData,
+    "roomType": "Deluxe Suite",
+    "pricePerNight": 549,
+    "amenities": ["Free WiFi", "Breakfast Included", "City View", "Air Conditioning"],
+    "images": [roomImg2, roomImg1, roomImg4, roomImg3],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:27:10.000Z",
+    "updatedAt": "2025-04-10T06:27:10.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f7653b197ac559e4089bb2",
+    "hotel": hotelDummyData,
+    "roomType": "Family Room",
+    "pricePerNight": 459,
+    "amenities": ["Free WiFi", "Kitchenette", "Parking", "Pool Access"],
+    "images": [roomImg3, roomImg2, roomImg1, roomImg4],
+    "isAvailable": false,
+    "createdAt": "2025-04-10T06:27:40.000Z",
+    "updatedAt": "2025-04-10T06:27:40.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f7656e197ac559e4089bc3",
+    "hotel": hotelDummyData,
+    "roomType": "Twin Room",
+    "pricePerNight": 279,
+    "amenities": ["Free WiFi", "Room Service", "City View"],
+    "images": [roomImg1, roomImg4, roomImg2, roomImg3],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:28:15.000Z",
+    "updatedAt": "2025-04-10T06:28:15.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f765a1197ac559e4089bd4",
+    "hotel": hotelDummyData,
+    "roomType": "King Suite",
+    "pricePerNight": 599,
+    "amenities": ["Free WiFi", "Spa Access", "Balcony", "Mountain View"],
+    "images": [roomImg4, roomImg3, roomImg2, roomImg1],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:29:05.000Z",
+    "updatedAt": "2025-04-10T06:29:05.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f765d4197ac559e4089be5",
+    "hotel": hotelDummyData,
+    "roomType": "Standard Room",
+    "pricePerNight": 189,
+    "amenities": ["Free WiFi", "Air Conditioning"],
+    "images": [roomImg2, roomImg4, roomImg3, roomImg1],
+    "isAvailable": true,
+    "createdAt": "2025-04-10T06:29:45.000Z",
+    "updatedAt": "2025-04-10T06:29:45.000Z",
+    "__v": 0
+  },
+  {
+    "_id": "67f76608197ac559e4089bf6",
+    "hotel": hotelDummyData,
+    "roomType": "Executive Suite",
+    "pricePerNight": 529,
+    "amenities": ["Free WiFi", "Gym Access", "City View", "Room Service"],
+    "images": [roomImg1, roomImg3, roomImg4, roomImg2],
+    "isAvailable": false,
+    "createdAt": "2025-04-10T06:30:20.000Z",
+    "updatedAt": "2025-04-10T06:30:20.000Z",
+    "__v": 0
+  }
 ]
+
 
 
 
