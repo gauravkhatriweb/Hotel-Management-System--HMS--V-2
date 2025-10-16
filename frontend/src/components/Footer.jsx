@@ -1,7 +1,10 @@
 import React from 'react'
 import { assets } from '../assets/assets'
+import { useState } from 'react'
+import HotelReg from '../components/HotelReg';
 
 export default function Footer() {
+  const [showHotelReg, setShowHotelReg] = useState(false);
   const year = new Date().getFullYear()
 
   const destinations = [
@@ -12,11 +15,12 @@ export default function Footer() {
   ]
 
   const support = [
-    { label: 'Help Center', href: '#' },
-    { label: 'Manage Booking', href: '#' },
-    { label: 'Cancellation Policy', href: '#' },
-    { label: 'Contact Support', href: '#' },
-  ]
+    { label: "Help Center", href: "#" },
+    { label: "Contact Us", href: "#" },
+    { label: "Cancellation Options", href: "#" },
+    // clickable item that opens the hotel registration modal
+    { label: "Register your hotel", href: "#register", action: () => setShowHotelReg(true) },
+  ];
 
   const company = [
     { label: 'About', href: '#' },
@@ -132,24 +136,37 @@ export default function Footer() {
                 </ul>
               </div>
 
-              {/* Support */}
-              <div className="space-y-4 text-center sm:text-left">
-                <h3 className="font-semibold text-gray-900 text-base tracking-wide uppercase">
-                  Support
-                </h3>
-                <ul className="space-y-3 list-none text-sm text-gray-600">
-                  {support.map((s) => (
-                    <li key={s.label}>
-                      <a
-                        href={s.href}
-                        className="hover:text-gray-900 hover:underline underline-offset-4 decoration-gray-300 transition-colors"
-                      >
-                        {s.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </div>
+           {/* Support column */}
+        <div className="space-y-4 text-center sm:text-left">
+          <h3 className="font-semibold text-gray-900 text-base tracking-wide uppercase">Support</h3>
+          <ul className="space-y-3 list-none text-sm text-gray-600">
+            {support.map((s) => (
+              <li key={s.label}>
+                {s.action ? (
+                  <button
+                    onClick={(e) => {
+                      e.preventDefault();
+                      s.action();
+                    }}
+                    className="hover:text-gray-900 hover:underline underline-offset-4 decoration-gray-300 transition-colors text-left"
+                  >
+                    {s.label}
+                  </button>
+                ) : (
+                  <a
+                    href={s.href}
+                    className="hover:text-gray-900 hover:underline underline-offset-4 decoration-gray-300 transition-colors"
+                  >
+                    {s.label}
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        {/* render HotelReg modal (controlled mode) */}
+        <HotelReg open={showHotelReg} onClose={() => setShowHotelReg(false)} autoShow={false} />
 
               {/* Company */}
               <div className="space-y-4 text-center sm:text-left">
