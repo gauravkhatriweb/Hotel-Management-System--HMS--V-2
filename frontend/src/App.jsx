@@ -7,6 +7,10 @@ import AllRooms from './pages/AllRooms';
 import RoomDetails from './pages/RoomDetails';
 import MyBooking from './pages/MyBooking';
 import HotelReg from './components/HotelReg';
+import Layout from './pages/hotelOwner/Layout';
+import Dashboard from './pages/hotelOwner/Dashboard';
+import AddRoom from './pages/hotelOwner/AddRoom';
+import ListRoom from './pages/hotelOwner/ListRoom'; 
 
 const App = () => {
   const location = useLocation();
@@ -23,9 +27,12 @@ const App = () => {
           <Route path='/rooms/:id' element={<RoomDetails/>} />
           <Route path='*' element={<h1 className='text-center text-3xl font-bold mt-20'>404 Not Found</h1>} />
           <Route path='my-bookings' element={<MyBooking/>}/>
-
-
-        </Routes>
+          <Route path="/owner" element={<Layout />}>
+    <Route index element={<Dashboard/>}/>
+    <Route path="add-room" element={<AddRoom />} />
+    <Route path="list-room" element={<ListRoom />} />
+  </Route>
+          </Routes>
 
       </div>
       <Footer/>
