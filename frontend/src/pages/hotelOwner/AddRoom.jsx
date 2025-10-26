@@ -48,18 +48,23 @@ const AddRoom = () => {
 
       <form onSubmit={handleSubmit} className="space-y-6">
         {/* Room Type */}
-        <div>
-          <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
-            Room Type
-          </label>
-          <input
-            type="text"
-            placeholder="e.g., Deluxe Suite"
-            value={inputs.roomType}
-            onChange={(e) => setInputs({ ...inputs, roomType: e.target.value })}
-            className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 text-gray-700 dark:text-gray-200 placeholder-gray-400 focus:ring-2 focus:ring-blue-500 focus:outline-none"
-          />
-        </div>
+       <div>
+  <label className="block mb-2 font-medium text-gray-700 dark:text-gray-300">
+    Room Type
+  </label>
+  <select
+    value={inputs.roomType}
+    onChange={(e) => setInputs({ ...inputs, roomType: e.target.value })}
+    className="w-full bg-gray-50 dark:bg-gray-800 border border-gray-300 dark:border-gray-600 rounded-xl px-4 py-3 text-gray-700 dark:text-gray-200 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+  >
+    <option value="">Select Room Type</option>
+    <option value="Single Bed">Single Bed</option>
+    <option value="Double Bed">Double Bed</option>
+    <option value="Luxury Room">Luxury Room</option>
+    <option value="Family Suite">Family Suite</option>
+  </select>
+</div>
+
 
         {/* Price Per Night */}
         <div>
@@ -144,6 +149,9 @@ const AddRoom = () => {
           >
             Add Room
           </button>
+        </div>
+        <div>
+
         </div>
       </form>
     </div>
